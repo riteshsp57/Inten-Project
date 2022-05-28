@@ -7,6 +7,8 @@ import peoples from "./peoples.svg";
 import clock from "./clock.svg";
 import calendar from "./calendar.svg";
 import Footer from "./components/footer";
+import maths from "./maths.svg"
+
 
 function App() {
   return (
@@ -29,6 +31,7 @@ function App() {
       <div className="w-full flex justify-center font-nunito">
         <div className="w-4/5 portrait:w-5/6 pt-4 flex flex-col">
           <div class="flex text-sky-600 font-bold pb-4">
+            <img className="w-5 fill-slate-50" src={maths}></img>
             <p className="font-nunito ml-2">Maths</p>
           </div>
           <h1 className="text-hd pb-4 font-bold text-neutral-700 font-nunito">
@@ -54,88 +57,45 @@ function App() {
                   ₹1499 INR For 10 Live Classes
                 </p>
               </div>
-              <div className="flex justify-center items-center">
-                <span
+            </div>
+            
+            <div className="flex justify-center items-center">
+              <span className='p-2.5'>
+                <img
+                  alt
+                  src="https://careerswithstem.com.au/wp-content/uploads/2018/09/In-text-image-MATT-500x300.jpg"
+                  decoding="async"
+                  data-nimg="intrinsic"
+                  className="h-fit md:w-fit lg:w-5/6 portrait:mb-6 rounded-lg"
                   style={{
+                    // position: "absolute",
+                    inset: 0,
                     boxSizing: "border-box",
-                    display: "inline-block",
-                    overflow: "hidden",
-                    width: "initial",
-                    height: "initial",
-                    background: "none",
-                    opacity: 1,
-                    border: 0,
-                    margin: 0,
-                    padding: 0,
-                    position: "relative",
-                    maxWidth: "100%",
+                    //padding:"10px",
+                    border: "none",
+                    margin: "auto",
+                    display: "block",
+                    width: '500px',
+                    height: '300px',
+                    
                   }}
-                >
-                  <span
-                    style={{
-                      boxSizing: "border-box",
-                      display: "block",
-                      width: "initial",
-                      height: "initial",
-                      background: "none",
-                      opacity: 1,
-                      border: 0,
-                      margin: 0,
-                      padding: 0,
-                      maxWidth: "100%",
-                    }}
-                  >
-                    <img
-                      alt
-                      aria-hidden="true"
-                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27500%27%20height=%27300%27/%3e"
-                      style={{
-                        display: "block",
-                        maxWidth: "100%",
-                        width: "initial",
-                        height: "initial",
-                        background: "none",
-                        opacity: 1,
-                        border: 0,
-                        margin: 0,
-                        padding: 0,
-                      }}
-                    />
-                  </span>
-                  <img
-                    alt
-                    src="/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fyounglabs-8c353.appspot.com%2Fo%2Fcourse%2520cover%2520pictures%252Freading.webp%3Falt%3Dmedia%26token%3D34617f04-1c15-4bff-a75e-8a6668ad373a&w=1080&q=75"
-                    decoding="async"
-                    data-nimg="intrinsic"
-                    className="h-fit md:w-fit lg:w-5/6 portrait:mb-6 rounded-lg"
-                    style={{
-                      position: "absolute",
-                      inset: 0,
-                      boxSizing: "border-box",
-                      padding: 0,
-                      border: "none",
-                      margin: "auto",
-                      display: "block",
-                      width: 0,
-                      height: 0,
-                      minWidth: "100%",
-                      maxWidth: "100%",
-                      minHeight: "100%",
-                      maxHeight: "100%",
-                    }}
-                    srcSet="/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fyounglabs-8c353.appspot.com%2Fo%2Fcourse%2520cover%2520pictures%252Freading.webp%3Falt%3Dmedia%26token%3D34617f04-1c15-4bff-a75e-8a6668ad373a&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fyounglabs-8c353.appspot.com%2Fo%2Fcourse%2520cover%2520pictures%252Freading.webp%3Falt%3Dmedia%26token%3D34617f04-1c15-4bff-a75e-8a6668ad373a&w=1080&q=75 2x"
-                  />
-                  <noscript />
-                </span>
-              </div>
+                  
+                />
+              </span>
             </div>
           </div>
+          <div class="mt-8 border-t-2">
+            <p class="font-nunito text-pr text-gray-700 py-4 font-semibold ">Available Batches</p>
+          </div>
+          
 
           <div className="lg:w-full mx-auto my-10">
             <Batch
               eff={"grow pb-4 rounded-lg flex flex-col border-2 px-4"}
               title={"Details"}
-              description={"CLASS 1- Criss-cross multiplication \nCLASS 2- Subtraction with numbers near to 10 and multiples of 10 Cutoff method addition/ Vyavakalanam method Dot method addition/ Rekhanth method \nCLASS 3- Multiplication upto 100 (Done mentally) \nCLASS 4- Subtraction with Numbers near 10 and multiple of 10 \nCLASS 5- Digit sum method Multiplication using base method part 1/ Nikhilam method, Fractions \nCLASS 6- Base method multiplication part 2 Division part 1 \nCLASS 7 - LCM and HCF \nCLASS 8- Multiplication with series of 9 Division part 2 \nCLASS 9- Multiplication with series of 1 Multiplication with 21,31 41 91 Base complement method subtraction/ Nikhil am method ,Division of any number by 11 \nCLASS 10- Division with series of 9 Multiplication by digits 12 to 19 Multiplication with 5, 25, 125 Percentage"}
+              description={
+                "CLASS 1- Criss-cross multiplication \nCLASS 2- Subtraction with numbers near to 10 and multiples of 10 Cutoff method addition/ Vyavakalanam method Dot method addition/ Rekhanth method \nCLASS 3- Multiplication upto 100 (Done mentally) \nCLASS 4- Subtraction with Numbers near 10 and multiple of 10 \nCLASS 5- Digit sum method Multiplication using base method part 1/ Nikhilam method, Fractions \nCLASS 6- Base method multiplication part 2 Division part 1 \nCLASS 7 - LCM and HCF \nCLASS 8- Multiplication with series of 9 Division part 2 \nCLASS 9- Multiplication with series of 1 Multiplication with 21,31 41 91 Base complement method subtraction/ Nikhil am method ,Division of any number by 11 \nCLASS 10- Division with series of 9 Multiplication by digits 12 to 19 Multiplication with 5, 25, 125 Percentage"
+              }
               number={"1"}
             />
             <Batch
@@ -156,10 +116,8 @@ function App() {
             />
           </div>
         </div>
-        
-              
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }
